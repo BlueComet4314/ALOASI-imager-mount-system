@@ -1,1 +1,94 @@
-*.skb
+################################################################################
+# OS / Editor junk
+################################################################################
+.DS_Store
+.DS_Store?
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+################################################################################
+# Temporary / autosave / backup files (general)
+################################################################################
+*.tmp
+*.temp
+*.bak
+*.old
+*.swp
+*.swo
+*.autosave
+*.log
+
+################################################################################
+# SketchUp (SKP) autosaves / backups
+################################################################################
+*.skb            # SketchUp backup
+*.skp~           # sometimes created by tools/scripts
+*_AutoSave*.skp  # autosave naming patterns
+*_autosave*.skp
+
+################################################################################
+# Onshape
+################################################################################
+# Onshape itself is cloud-based, so nothing special.
+# Ignore any downloaded zip exports or local caches you don't want tracked:
+*.onshape-export/
+*.zip
+
+################################################################################
+# Slicers / 3D printing apps (Creality Print, Cura, PrusaSlicer, etc.)
+################################################################################
+*.gcode
+*.3mf~           # backup/temporary
+*.amf
+*.bgcode
+*.ufp
+*.ufp2
+*.ctb
+*.photon
+*.pwmo
+*.cbddlp
+
+# Common slicer temp/cache folders (add more if you see them appear)
+Cura/
+PrusaSlicer/
+CrealityPrint/
+*.cache/
+cache/
+temp/
+
+################################################################################
+# CAD/CAE tool caches (generic)
+################################################################################
+# Fusion 360, SolidWorks, Inventor, etc. often create these:
+*.f3d~
+*.f3z~
+*.sldprt~
+*.sldasm~
+*.slddrw~
+*.ipj~
+*.iam~
+*.ipt~
+*.idw~
+*.bak*
+
+################################################################################
+# Large derived exports (OPTIONAL)
+################################################################################
+# If you want to keep the repo lightweight, ignore heavy exports and re-generate.
+# Comment these OUT if you DO want to store these files in git.
+# *.stl
+# *.step
+# *.stp
+# *.iges
+# *.igs
+# *.obj
+
+################################################################################
+# Build/output folders (if you generate docs/renders)
+################################################################################
+out/
+output/
+exports/
+renders/
