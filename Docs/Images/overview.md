@@ -1,0 +1,1 @@
+screenshots, photos, diagrams
