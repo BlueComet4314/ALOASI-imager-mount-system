@@ -61,12 +61,12 @@ See `docs/system-overview.md` for comparison and selection guidance.
 
 ## What’s in this repo
 
-repo map:
-[`docs/`](docs/)            -> how it works / how to build it
-[`releases/`](releases/)    -> print-ready exports organized by version + variant
-[`cad/`](cad/)              -> editable sources + exports (SketchUp + Onshape links/exports)
-[`lab-notes/`](lab-notes/)  -> print logs + tuning/slicer settings
-[`archive/`](archive/)      -> older iterations kept for reference
+**Repo map:**
+- [`docs/`](docs/)            -> how it works / how to build it
+- [`releases/`](releases/)    -> print-ready exports organized by version + variant
+- [`cad/`](cad/)              -> editable sources + exports (SketchUp + Onshape links/exports)
+- [`lab-notes/`](lab-notes/)  -> print logs + tuning/slicer settings
+- [`archive/`](archive/)      -> older iterations kept for reference
 
 
 ## Current build/design status
@@ -87,8 +87,10 @@ repo map:
 - Foam-Retained (simpler, fewer parts)
 - Mechanically-Locked + Cover (more rigid, tighter tolerances)
 
+
 2) Download the latest release:
-- [Latest Release](releases/)
+- [Latest Release](../../releases/latest)  
+  *(If no releases exist yet, use [`releases/`](releases/) for now.)*
 
 3) Print:
 - See [`cr-nylon.md`](docs/printing/cr-nylon.md) or [`docs/printing/`](docs/Printing/) for material notes
