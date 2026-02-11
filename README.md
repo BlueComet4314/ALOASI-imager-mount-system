@@ -43,17 +43,20 @@ Two cradle variants are maintained for different retention strategies:
 - **Mechanically-Locked Cradle + Cover (V7 lineage)**  
   Uses a locking cover + optional side screw mounts to rigidly retain and mount the camera (no foam required).
 
-See `docs/system-overview.md` for comparison and selection guidance.
+See `Docs/system-overview.md` for comparison and selection guidance.
 
 ### System Context
 
-![Full Cavity Mount](docs/Images/hero/CavityMount_Full.png)
+![Full Cavity Mount](Docs/Images/hero/CavityMount_Full.png)
+
 *Full ceiling cavity context showing rail penetration and mount location.*
 
-![Mount Assembly](docs/Images/hero/Full_mount_interface.png)
+![Mount Assembly](Docs/Images/hero/Full_mount_interface.png)
+
 *Camera cradle mounted to board base and rail support structure.*
 
-![Dome Aperture Layout](docs/Images/hero/Dome_Layout.png)
+![Dome Aperture Layout](Docs/Images/hero/Dome_Layout.png)
+
 *Ceiling plate with multiple dome apertures used for clearance validation.*
 
 ### Hardware
@@ -67,7 +70,7 @@ See `docs/system-overview.md` for comparison and selection guidance.
 - Materials (Cradle/Cover): Hyper-PLA (prototyping), PETG (functional)
 
 > Material choices differ by subsystem: PETG is sufficient for the cradle/camera interface, while clamps benefit from higher stiffness/strength and humidity tolerance (Hyper-PC). 
-See [`docs/Printing/materials.md`](docs/Printing/materials.md) for rationale and slicer notes.
+See [`Docs/Printing/materials.md`](Docs/Printing/materials.md) for rationale and slicer notes.
 
 
 #### Mounting hardware (current / planned)
@@ -83,7 +86,7 @@ See [`docs/Printing/materials.md`](docs/Printing/materials.md) for rationale and
 ### What’s in this repo
 
 **Repo map:**
-- [`docs/`](docs/)            -> how it works / how to build it
+- [`Docs/`](Docs/)            -> how it works / how to build it
 - [`releases/`](releases/)    -> print-ready exports organized by version + variant
 - [`cad/`](cad/)              -> editable sources + exports (SketchUp + Onshape links/exports)
 - [`lab-notes/`](lab-notes/)  -> print logs + tuning/slicer settings
@@ -114,11 +117,11 @@ See [`docs/Printing/materials.md`](docs/Printing/materials.md) for rationale and
 - In-repo exports: [`releases/`](releases/)
 
 3) Print:
-- See [`cr-nylon.md`](docs/Printing/cr-nylon.md) or [`docs/Printing/`](docs/Printing/) for material notes
+- See [`cr-nylon.md`](Docs/Printing/cr-nylon.md) or [`Docs/Printing/`](Docs/Printing/) for material notes
 - Each release includes `notes.md` with recommended orientation and settings
 
 4) Assemble:
-- See [`docs/assembly.md`](docs/assembly.md)
+- See [`Docs/assembly.md`](Docs/assembly.md)
 
 ### Printing notes + troubleshooting
 
@@ -151,7 +154,7 @@ Milestones are tagged and exported under [`releases/`](releases/).
 - Functional (current): Hyper-PC (preferred for strength + humid environments)
 
 > Material choices differ by subsystem: PETG is sufficient for the cradle/camera interface, while clamps benefit from higher stiffness/strength and humidity tolerance (Hyper-PC).
-See [`docs/Printing/materials.md`](docs/Printing/materials.md) for rationale and slicer notes.
+See [`Docs/Printing/materials.md`](Docs/Printing/materials.md) for rationale and slicer notes.
 
 
 ### Current build/design status
@@ -167,7 +170,7 @@ Both designs for the clamps have been finalized:
 
 ### Printing Notes + Troubleshooting
 - CR-Nylon is very sensitive to moisture; drying is required for low-stringing prints.
-- See [`docs/Printing/cr-nylon.md`](docs/Printing/cr-nylon.md) and [`lab-notes/test-prints.md`](lab-notes/test-prints.md).
+- See [`Docs/Printing/cr-nylon.md`](Docs/Printing/cr-nylon.md) and [`lab-notes/test-prints.md`](lab-notes/test-prints.md).
 
 
 ### Contributing / lab use
@@ -176,6 +179,6 @@ Both designs for the clamps have been finalized:
 
 ### System Context
 
-![Locking Collars/Clamps](docs/Images/hero/LockingCollars_on_Mount.png)
+![Locking Collars/Clamps](Docs/Images/hero/LockingCollars_on_Mount.png)
 *Camera cradle mounted to board base and rail support structure. Board base is sitting on top of the clamps.*
 
