@@ -1,0 +1,3 @@
+- long-nose pliers
+- Precision tweezers
+- Flush/thin diagonal cutting pliers

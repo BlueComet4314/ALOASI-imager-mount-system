@@ -1,8 +1,10 @@
 > ⚠️ This repo is under construction.
 
-# Table of Contents:
+# ALOASI All-Sky Imager Mount System
 
-- [All-Sky Imager Cradle and Cover](#all-sky-imager-cradle-and-cover)
+## Table of Contents:
+
+- [Cradle and Cover](#cradle-and-cover)
     - [Overview](#overview)
         - [Supported cradle variants](#supported-cradle-variants)
     - [Hardware](#hardware)
@@ -18,11 +20,11 @@
     - [Versioning](#versioning)
 - [Mounting Clamps](#mounting-clamps)
 
-# All-Sky Imager Cradle and Cover
+## Cradle and Cover
 
 Mechanical design repo for the ALOASI All-Sky Imager ceiling mount hardware: CAD exports (STEP/STL), print profiles, BOMs, rail layouts, and assembly notes for the ZWO ASI183MM Pro + fisheye lens system.
 
-## Overview
+### Overview
 
 This project provides 3D-printed camera cradle options to mount a cylindrical CCD-style camera (ZWO ASI183MM Pro or similar) inside a ceiling cavity/dome while:
 
@@ -31,7 +33,7 @@ This project provides 3D-printed camera cradle options to mount a cylindrical CC
 - preserving access to bottom ports/cables
 - providing a stable interface to a ceiling mount/rail system
 
-### Supported cradle variants
+#### Supported cradle variants
 
 Two cradle variants are maintained for different retention strategies:
 
@@ -43,13 +45,32 @@ Two cradle variants are maintained for different retention strategies:
 
 See `docs/system-overview.md` for comparison and selection guidance.
 
-## Hardware
+### System Context
 
-### Imaging payload
+![Full Cavity Mount](docs/Images/hero/CavityMount_Full.png)
+*Full ceiling cavity context showing rail penetration and mount location.*
+
+![Mount Assembly](docs/Images/hero/Full_mount_interface.png)
+*Camera cradle mounted to board base and rail support structure.*
+
+![Dome Aperture Layout](docs/Images/hero/Dome_Layout.png)
+*Ceiling plate with multiple dome apertures used for clearance validation.*
+
+### Hardware
+
+#### Imaging payload
 - ZWO **ASI183MM Pro**
 - Fujinon **FE185C086HA** fisheye lens
 
-### Mounting hardware (current / planned)
+#### Fabrication
+- Printer: Creality K1C 3D Printer
+- Materials (Cradle/Cover): Hyper-PLA (prototyping), PETG (functional)
+
+> Material choices differ by subsystem: PETG is sufficient for the cradle/camera interface, while clamps benefit from higher stiffness/strength and humidity tolerance (Hyper-PC). 
+See [`docs/Printing/materials.md`](docs/Printing/materials.md) for rationale and slicer notes.
+
+
+#### Mounting hardware (current / planned)
 - 3030 aluminum T-slot rail, 400 mm (ceiling mount frame)
 - 2020 aluminum T-slot rail, 600 mm (ceiling mount frame)
 - M5 and/or M6 fasteners
@@ -59,7 +80,7 @@ See `docs/system-overview.md` for comparison and selection guidance.
 <!-- ### Legacy / alternate
 -  -->
 
-## What’s in this repo
+### What’s in this repo
 
 **Repo map:**
 - [`docs/`](docs/)            -> how it works / how to build it
@@ -69,19 +90,19 @@ See `docs/system-overview.md` for comparison and selection guidance.
 - [`archive/`](archive/)      -> older iterations kept for reference
 
 
-## Current build/design status
+### Current build/design status
 
-### Printable
+#### Printable
 - **Foam-Retained Cradle (V5 lineage)**
 - Main board base for cradle/camera placement
 
-### In progress
+#### In progress
 - **Mechanically-Locked Cradle + Cover (V7 lineage)**
 - Side screw mounts (M5) for rigid attachment to the board base
 - CR-Nylon tuning for improved slit/hex feature fidelity
 - Hyper-PC tuning for improved stability and shrink
 
-## Quickstart
+### Quickstart
 
 1) Choose a cradle variant:
 - Foam-Retained (simpler, fewer parts)
@@ -89,22 +110,20 @@ See `docs/system-overview.md` for comparison and selection guidance.
 
 
 2) Download the latest release:
-- [Latest Release](../../releases/latest)  
-  *(If no releases exist yet, use [`releases/`](releases/) for now.)*
+- GitHub Releases: [Latest Release](../../releases/latest)
+- In-repo exports: [`releases/`](releases/)
 
 3) Print:
-- See [`cr-nylon.md`](docs/printing/cr-nylon.md) or [`docs/printing/`](docs/Printing/) for material notes
+- See [`cr-nylon.md`](docs/Printing/cr-nylon.md) or [`docs/Printing/`](docs/Printing/) for material notes
 - Each release includes `notes.md` with recommended orientation and settings
 
 4) Assemble:
 - See [`docs/assembly.md`](docs/assembly.md)
 
-## Printing notes + troubleshooting
+### Printing notes + troubleshooting
 
-- CR-Nylon is very sensitive to moisture; drying is required for low-stringing prints.
-- Fine-feature deformation (hex pockets / clamp slits) is tracked in [`test-prints.md`](lab-notes/test-prints.md).
 
-## Contributing / lab use
+### Contributing / lab use
 
 - Use clear filenames: `partname_variant_rev_material.stl`
   Example: `cradle_foam_v5_nylon.stl`
@@ -112,11 +131,51 @@ See `docs/system-overview.md` for comparison and selection guidance.
  -->
 - Prefer releases for anything used in the lab (avoid printing from `cad/stl-scratch/`)
 
-## Versioning
+### Versioning
 
 - **V5 lineage** = Foam-Retained Cradle family
 - **V7 lineage** = Mechanically-Locked Cradle + Cover family
 
 Milestones are tagged and exported under [`releases/`](releases/).
 
-# Mounting Clamps
+
+## Mounting Clamps
+
+### Overview
+
+### Hardware
+
+#### Fabrication / Materials
+- Prototype: Hyper-PLA
+- Tested: CR-Nylon (good strength, moisture-sensitive during printing)
+- Functional (current): Hyper-PC (preferred for strength + humid environments)
+
+> Material choices differ by subsystem: PETG is sufficient for the cradle/camera interface, while clamps benefit from higher stiffness/strength and humidity tolerance (Hyper-PC).
+See [`docs/Printing/materials.md`](docs/Printing/materials.md) for rationale and slicer notes.
+
+
+### Current build/design status
+
+#### Printable
+
+Both designs for the clamps have been finalized:
+- [LockingCollarV4-M5](releases/LockingCollar/v1/) - Locking collar with M5 sized screw hole and nut
+- [LockingCollarV4-M6](releases/LockingCollar/v2/) - Locking collar with M6 sized screw hole and nut
+
+### Quick Start
+
+
+### Printing Notes + Troubleshooting
+- CR-Nylon is very sensitive to moisture; drying is required for low-stringing prints.
+- See [`docs/Printing/cr-nylon.md`](docs/Printing/cr-nylon.md) and [`lab-notes/test-prints.md`](lab-notes/test-prints.md).
+
+
+### Contributing / lab use
+
+### Versioning
+
+### System Context
+
+![Locking Collars/Clamps](docs/Images/hero/LockingCollars_on_Mount.png)
+*Camera cradle mounted to board base and rail support structure. Board base is sitting on top of the clamps.*
+
