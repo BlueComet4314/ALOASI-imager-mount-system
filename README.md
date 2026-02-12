@@ -97,10 +97,11 @@ See [`Docs/Printing/materials.md`](Docs/Printing/materials.md) for rationale and
 
 #### Printable
 - **Foam-Retained Cradle (V5 lineage)**
-- Main board base for cradle/camera placement
+- **Mechanically-Locked Cradle (V8 Lineage)** - Hyper PLA
+- **Cover for Cradle (V4 Lineage)** - Hyper PLA
 
 #### In progress
-- **Mechanically-Locked Cradle + Cover (V7 lineage)**
+- **Mechanically-Locked Cradle + Cover (V7 lineage)** - PETG testing
 - Side screw mounts (M5) for rigid attachment to the board base
 - CR-Nylon tuning for improved slit/hex feature fidelity
 - Hyper-PC tuning for improved stability and shrink
@@ -162,8 +163,8 @@ See [`Docs/Printing/materials.md`](Docs/Printing/materials.md) for rationale and
 #### Printable
 
 Both designs for the clamps have been finalized:
-- [LockingCollarV4-M5](releases/LockingCollar/v1/) - Locking collar with M5 sized screw hole and nut
-- [LockingCollarV4-M6](releases/LockingCollar/v2/) - Locking collar with M6 sized screw hole and nut
+- [LockingCollarV4-M5](releases/) - Locking collar with M5 sized screw hole and nut
+- [LockingCollarV4-M6](releases/) - Locking collar with M6 sized screw hole and nut
 
 ### Quick Start
 
