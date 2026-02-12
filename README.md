@@ -114,7 +114,7 @@ See [`Docs/Printing/materials.md`](Docs/Printing/materials.md) for rationale and
 
 
 2) Download the latest release:
-- GitHub Releases: [Latest Release](../../releases/latest)
+- GitHub releases: [Latest Release](../../releases/latest)
 - In-repo exports: [`releases/`](releases/)
 
 3) Print:
